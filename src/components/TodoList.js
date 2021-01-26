@@ -54,6 +54,10 @@ function TodoList() {
     setTodos(removeArray);
   };
 
+  const clearTodoList = () => {
+    setTodos([]);
+  };
+
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text) {
       alert("Input a proper value");
@@ -74,6 +78,13 @@ function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
+      {todos.length === 0 ? (
+        ""
+      ) : (
+        <button className="todo-button delete" onClick={clearTodoList}>
+          Clear all
+        </button>
+      )}
     </div>
   );
 }

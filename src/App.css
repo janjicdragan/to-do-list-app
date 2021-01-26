@@ -71,6 +71,12 @@ h1 {
   padding: 16px 22px;
 }
 
+.todo-button.delete {
+  background-color: #a40f1b;
+  padding: 16px 22px;
+  margin-top: 20px;
+}
+
 .todo-container {
   display: flex;
   flex-direction: row;
