@@ -14,11 +14,8 @@ function TodoList() {
   }, [todos]);
 
   const loadTodos = () => {
-    if (localStorage.getItem("todos" === null)) {
-      localStorage.setItem("todos", JSON.stringify(todos));
-      setTodos([]);
-    } else {
-      const data = JSON.parse(localStorage.getItem("todos"));
+    const data = JSON.parse(localStorage.getItem("todos"));
+    if (data) {
       setTodos(data);
     }
   };
