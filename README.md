@@ -10,7 +10,7 @@ In order to inspect how the application is looking in production mode, you can f
 
 You will need the following tools:
 
-- [Node.js] (https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 
 ### Setup
 
